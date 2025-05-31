@@ -1,15 +1,20 @@
 "use strict"
 
-async function fetchData(url) {
+import dayjs from "dayjs"
+
+
+
+async function fetchData(url: string) {
     const fetchData = await fetch(url)
     const obj = await fetchData.json()
     console.clear()
     return obj
 }
 
-async function getChefBirthday(id) {
+async function getChefBirthday(id: number) {
 
     let recipe
+
     try {
         recipe = await fetchData(`https://dummyjson.com/recipes/${id}`)
 
@@ -21,7 +26,9 @@ async function getChefBirthday(id) {
         console.error("error:", recipe.message, `chiamata effettuata ma non esiste una ricetta con id: ${id}`)
     }
 
+
     let user
+
     try {
         user = await fetchData(`https://dummyjson.com/users/${recipe.userId}`)
     } catch (error) {

@@ -1,3 +1,4 @@
+COMPLEANNO DELLO CHEF
 
 In questo esercizio, utilizzerai async/await per creare la funzione getChefBirthday(id). Questa funzione accetta un id di una ricetta e deve:
 
@@ -50,3 +51,27 @@ Esempio di output atteso
 Esempio di output atteso con formattazione
 
     Data di nascita dello chef: 15/06/1990
+
+
+
+
+
+
+RIFAI UN ESERCIZIO
+
+Scegli un esercizio tra Il compleanno dello chef e Dashboard della città del Modulo 1 – Advanced JavaScript e riscrivilo utilizzando TypeScript.
+
+Tipizza tutte le variabili, funzioni e strutture dati in modo esplicito, e verifica che il comportamento finale sia identico alla versione in JavaScript.
+
+
+
+🎯 Bonus
+Scegli un esercizio tra Carrello della Spesa, Lista di Politici, Autocomplete e Web Developer Signup del Modulo 2 – Advanced React e riscrivilo in React + TypeScript.
+
+
+Tipizza:
+
+-le props dei componenti
+eventuali hook (useState, useReducer, useRef, useContext)
+
+-Avvia il progetto e verifica che tutte le tipizzazioni siano corrette.
