@@ -135,7 +135,8 @@ function isChef(data: unknown): data is Chef {
         "firstName" in data && typeof data.firstName === "string" &&
         "gender" in data && typeof data.gender === "string" &&
         "hair" in data && typeof data.hair === "object" &&
-        "height" in data && typeof data.height === "number" && "image" in data && typeof data.image === "string" &&
+        "height" in data && typeof data.height === "number" &&
+        "image" in data && typeof data.image === "string" &&
         "ip" in data && typeof data.ip === "string" &&
         "lastName" in data && typeof data.lastName === "string" &&
         "macAddress" in data && typeof data.macAddress === "string" &&
