@@ -193,11 +193,11 @@ async function fetchChefData(url: string) {
 async function getChefBirthday(id: number) {
 
     let recipe
-    console.log(recipe)
+
 
     try {
         recipe = await fetchRecipeData(`https://dummyjson.com/recipes/${id}`)
-
+        //console.log(recipe)
     } catch (error) {
         throw new Error(`non posso effettuare la chiamata per la ricetta`)
     }
@@ -207,10 +207,10 @@ async function getChefBirthday(id: number) {
     }
 
     let chef
-    console.log(chef)
 
     try {
         chef = await fetchChefData(`https://dummyjson.com/users/${recipe.userId}`)
+        //console.log(chef)
     } catch (error) {
         throw new Error(`non posso effettuare la chiamata per l'utente`)
     }
